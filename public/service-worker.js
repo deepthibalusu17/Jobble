@@ -2,7 +2,7 @@
 var doCache = false;
 
 // Name our cache
-var CACHE_NAME = "career-tinder";
+var CACHE_NAME = "Jobble";
 
 // Delete old caches that are not our current one!
 self.addEventListener("activate", event => {
