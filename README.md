@@ -1,4 +1,4 @@
-# career-tinder
+# Jobble-tinder
 
 ### `npm start`
 
