@@ -20,7 +20,7 @@ exports.userJoined = functions.firestore
       content:
         "Your profile is " +
         `${users.profileCompletenessPercentage}` +
-        " percent completed.Please update your profile to get your maximum of career tinder",
+        " percent completed.Please update your profile to get your maximum of Jobble",
       time: admin.firestore.FieldValue.serverTimestamp()
     };
 
@@ -35,8 +35,8 @@ exports.userUpdated = functions.firestore
     const text =
       percentage < 100
         ? `${percentage}` +
-          " percent completed right now.Please update your profile to get your maximum from Career Tinder."
-        : " completed right now. Thanks for being with Career Tinder";
+          " percent completed right now.Please update your profile to get your maximum from Jobble."
+        : " completed right now. Thanks for being with Jobble";
 
     const notification = {
       userId: uid,
@@ -70,7 +70,7 @@ exports.matchOccured = functions.firestore
           content:
             "Your profile has got a match for job titled - " +
             `${jobtitle}` +
-            " .Happy Career-Tindering!",
+            " .Happy Jobble....!",
           time: admin.firestore.FieldValue.serverTimestamp()
         };
 
